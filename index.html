@@ -1,15 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My Blog</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>Instagram Clone</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<div class="logo">
-			<img src="logo.png">
-			<h1>My Blog</h1>
-		</div>
-		<nav>
-			<ul>
-				<li><a
+  <header>
+    <div class="logo">
+      <img src="instagram-logo.png" alt="Instagram Logo">
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <main>
+    <div class="story-list">
+      <div class="story">
+        <div class="story-image">
+          <img src="story-image-1.jpg" alt="Story Image 1">
+        </div>
+        <div class="story-user">
+          <span>User 1</span>
+        </div>
+      </div>
+      <div class="story">
+        <div class="story-image">
+          <img src="story-image-2.jpg" alt="Story Image 2">
+        </div>
+        <div class="story-user">
+          <span>User 2</span>
+        </div>
+      </div>
+      <div class="story">
+        <div class="story-image">
+          <img src="story-image-3.jpg" alt="Story Image 3">
+        </div>
+        <div class="story-user">
+          <span>User 3</span>
+        </div>
+      </div>
+      <!-- 여러 개의 스토리를 추가할 수 있음 -->
+    </div>
+    
+    <div class="post-list">
+      <div class="post">
+        <div class="post-header">
+          <div class="user-avatar">
+            <img src="user-avatar-1.jpg" alt="User Avatar 1">
+          </div>
+          <div class="user-info">
+            <span class="user-name">User 1</span>
+            <span class="post-location">New York, NY</span>
+          </div>
+        </div>
+        <div class="post-image">
+          <img src="post-image-1.jpg" alt="Post Image 1">
+        </div>
+        <div class="post-actions">
+          <div class="like-button">
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="comment-button">
+            <i class="far fa-comment"></i>
+          </div>
+          <div class="share-button">
+            <i class="far fa-paper-plane"></i>
+          </div>
+        </div>
+        <div class="post-likes">
+          <span>100 likes</span>
+        </div>
+        <div class="post-comments">
+          <div class="comment">
+            <span class="comment-author">User 2</span>
+            <span class="comment-text">Great post!</span>
+          </div>
+          <div
